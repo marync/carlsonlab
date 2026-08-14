@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research — Carlson Lab</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="masthead">
+  <div class="masthead__inner">
+    <a class="site-title" href="index.html">Carlson Lab
+      <small>Population genetics &amp; evolution</small>
+    </a>
+    <nav class="topnav" aria-label="Primary">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html" class="active" aria-current="page">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="people.html">People</a></li>
+        <!--<li><a href="teaching.html">Teaching</a></li>-->
+        <li><a href="opportunities.html">Join the lab</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main" class="page">
+  <h1 class="page__title">Research areas</h1>
+  <div class="content">
+    <p>We work on a variety of topics across population and statistical genetics, usually combining
+      theory with computational and empirical analyses. Ultimately, we would like to understand how
+      physical and environmental constraints structure patterns of genetic
+      variation within and across species at the molecular and genomic scales.
+    </p>
+
+     <h3>Bridging fitness landscape theory with empirical data</h3>
+    <!-- replace with <img class="fig" src="assets/research2.jpg" alt="Epistasis and adaptation"> -->
+    <img class="fig" src="pictures/adaptive_figure.png" alt="Landscape">
+    <p>Evolution can be thought of as taking place in a high-dimensional <em>fitness landscape</em> which
+      maps genotype-to-phenotype, an enduring abstraction first introduced by Sewall Wright in the 1930s.
+      Researchers have made progress in describing how adaptation proceeds in random landscapes with different
+      degrees and types of epistatic interactions among loci.
+      At the same time, high-throughput sequencing and phenotyping techniques enable contemporary researchers
+      unprecedented access to <em>empirical</em> fitness landscapes&mdash;however, the assayed fraction of the fitness landscape
+      is still miniscule relative to its global dimension.
+      We are interested in developing principled expectations for the structure of empirical
+      fitness landscapes to answer the following questions:
+    </p>
+
+    <ul>
+    <li>How does the <em>choice</em> of which sites to mutate distort the statistics of empirical fitness landscapes?</li>
+    <li>What are the <em>best</em> strategies for exploring fitness landscapes, random, learned, and empirical?</li>
+    <li>How can we generalize across the increasing numbers of high-throughput mutagenesis studies to learn fundamental properties
+      of, e.g., protein and RNA, fitness landscapes?
+    </li>
+
+  </ul>
+
+    <h3>Non-parametric inference of genotype-to-phenotype maps</h3>
+    <img class="fig" src="pictures/rank_website.png" alt="Resample and Reorder">
+    <!--<div class="fig ph" role="img" aria-label="Image placeholder">Figure 1<br>(swap in an image)</div>-->
+    <p>Quantifying interactions among systems components, e.g., interactions among mutations,
+      typically requires specification of a measurement scale.
+      For example, it is often assumed that mutations combine additively or multiplicatively.
+      However, misspecification of scale can result in over- or under-estimation of the importance of
+      interactions among system components.
+      We recently introduced a rank-based method, <em>Resample and Reorder</em>, for inferring interactions without
+      an assumption about scale.
+      We are working on developing several inference procedures inspired by this method with the following aims:</p>
+      
+  <ul>
+    <li>Detecting the shape and dimension of genotype-to-phenotype maps from combinatorial mutagenesis experiments
+      without parametric assumptions.</li>
+    <li>Learning the dimension of genotype-to-fitness maps in high-throughput studies assaying fitness in numerous environments.</li>
+  </ul>
+
+      <ul class="pub-list">
+       <li>
+        <span class="pub-title">Distinguishing direct interactions from 
+          global epistasis using rank statistics.</span><br>
+        <span class="pub-meta">Carlson MO, Andrews BL, and Simons YB.
+        <span class="pub-venue">Proceedings of the National Academy of Sciences,</span> 
+        122 (39), e2509444122 (2026).</span>
+        <a href="https://www.pnas.org/doi/10.1073/pnas.2509444122">Link to paper.</a>
+      </li>
+    </ul>
+
+ 
+      <h3>More to come!</h3>
+
+
+
+<!--  <h3>Theory and inference in population genetics</h3>
+    <!-replace with <img class="fig" src="assets/research3.jpg" alt="Theory and inference">
+    <div class="fig ph" role="img" aria-label="Image placeholder">Figure 3<br>(swap in an image)</div>
+    <p></p> -->
+
+ 
+  </div>
+</main>
+<footer class="page__footer">
+  <div class="page__footer-inner">
+    <div class="footer-follow">
+      <a href="https://scholar.google.com/citations?user=kbD8Nv8AAAAJ">Google Scholar</a>
+      <a href="https://github.com/marync">GitHub</a>
+      <a href="mailto:maryn.carlson@rochester.edu">Email</a>
+    </div>
+    <div class="footer-copyright">&copy; <span id="year">2026</span> Carlson Lab.</div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
